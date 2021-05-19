@@ -1,17 +1,15 @@
 import React from 'react'
+import logo from '../../img/logo.png'
 
-
-const  Header = () => {
+const Header = () => {
     return (
-        <div>
+        <header className='center'>
+            <img src={logo} alt=""/>
             
-        </div>
+        </header>
     )
 }
 
-Header.propTypes = {
-
-}
 
 export default Header
 
