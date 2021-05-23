@@ -6,9 +6,9 @@
 
 html,
 body {
-  background: #000 url('img/bg.jpg') no-repeat center center/cover;
+  /* background: #000 url('img/bg.jpg') no-repeat center center/cover; */
   height: 100vh;
-  color: #fff;
+  /* color: #fff; */
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -46,7 +46,20 @@ header img {
   align-items: center;
   justify-content: center;
 }
-
+.pagination{
+  margin: 30px;
+  margin-top: 40px;
+  height: 5px;
+  display: flex;
+  justify-content: space-around;
+  
+}
+.pages a {
+  color: #fff;
+  
+  justify-content: space-around;
+  /* border: 1px solid whitesmoke; */
+}
 .search {
   height: 100px;
 }
@@ -60,6 +73,10 @@ input[type='text'] {
   width: 60%;
   margin: auto;
   outline: none;
+}
+h2{
+  margin: 20px auto;
+  margin-left: 50%;
 }
 
 .cards {
@@ -120,6 +137,7 @@ input[type='text'] {
   list-style: none;
   padding-bottom: 10px;
 }
+
 
 @media (max-width: 800px) {
   .cards {
