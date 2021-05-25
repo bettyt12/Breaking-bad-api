@@ -1,9 +1,9 @@
-import React, {useState} from 'react'
+import React from 'react'
+
 
 
 const Pagination = ({ itemPerPage,totalItems,paginate}) => {
     const pageNumbers=[];
-    const [num,setNum]=useState(0);
    
 
 
@@ -13,7 +13,7 @@ const Pagination = ({ itemPerPage,totalItems,paginate}) => {
     return (
         <div className='pagination'>
             <div className='pages'>
-            
+             
                 {pageNumbers.map(number=>(
                   
                    //<button onClick={()=> paginate(number -1)}>prev</button>

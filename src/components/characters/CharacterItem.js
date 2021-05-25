@@ -1,8 +1,15 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
+
+
 
 
 
 const CharacterItem = ({item}) => {
+
+  const { t, i18n } = useTranslation();
+
+
     return (
         <div className='card'>
         <div className='card-inner'>
@@ -13,16 +20,16 @@ const CharacterItem = ({item}) => {
             <h1>{item.name}</h1>
             <ul>
               <li>
-                <strong>Actor Name:</strong> {item.portrayed}
+                <strong>{t('char.3')}:</strong> {item.portrayed}
               </li>
               <li>
-                <strong>Nickname:</strong> {item.nickname}
+                <strong>{t('char.4')}:</strong> {item.nickname}
               </li>
               <li>
-                <strong>Birthday:</strong> {item.birthday}
+                <strong>{t('char.5')}:</strong> {item.birthday}
               </li>
               <li>
-                <strong>Status:</strong> {item.status}
+                <strong>{t('char.6')}:</strong> {item.status}
               </li>
             </ul>
           </div>

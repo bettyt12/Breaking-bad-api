@@ -1,4 +1,5 @@
-import React ,{useState} from 'react'
+import React ,{useState} from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Search = ({getQuery}) => {
 
@@ -8,6 +9,7 @@ const Search = ({getQuery}) => {
         setText(q)
         getQuery(q)
     }
+    const { t, i18n } = useTranslation();
 
     return (
         <section>
@@ -15,8 +17,9 @@ const Search = ({getQuery}) => {
                 <input 
                 type="text" 
                 className='form-control'
-                placeholder='search charachter'
+                placeholder={t('char.1')}
                 value={text}
+               
                 onChange={(e) => onChange(e.target.value)}
                 />
             </form>
